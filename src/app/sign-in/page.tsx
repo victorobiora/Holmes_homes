@@ -16,7 +16,8 @@ const Page = () => {
 
 
 	useEffect(() => {
-		if (isOpen) {
+		if (typeof window !== "undefined") {
+			if (isOpen) {
 		  document.body.style.overflow = "hidden"; 
 		} else {
 		  document.body.style.overflow = ""; 
@@ -25,7 +26,9 @@ const Page = () => {
 		// Cleanup when component is unmounted
 		return () => {
 		  document.body.style.overflow = "";
-		};
+		};	
+		}
+	
 	  }, [isOpen]);
 
 

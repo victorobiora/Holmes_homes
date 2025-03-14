@@ -35,18 +35,7 @@ const MobileFilter: React.FC<{
 		],
 	});
 
-    // useEffect(() => {
-    //     if (show) {
-    //       document.body.style.overflow = "hidden"; // Disable scrolling
-    //     } else {
-    //       document.body.style.overflow = ""; // Re-enable scrolling
-    //     }
-    
-    //     // Cleanup when component is unmounted
-    //     return () => {
-    //       document.body.style.overflow = "";
-    //     };
-    //   }, [show]);
+
 
 	return (
 		<>

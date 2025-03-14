@@ -72,7 +72,8 @@ const SelectedPropertyMainSection: React.FC<{
 	}, [isVisible, clickedIndex]);
 
 	useEffect(() => {
-		if (showBuyNowModal) {
+		if (typeof window !== "undefined") {
+			if (showBuyNowModal) {
 			document.body.style.overflow = "hidden";
 		} else {
 			document.body.style.overflow = "";
@@ -81,7 +82,9 @@ const SelectedPropertyMainSection: React.FC<{
 		// Cleanup when component is unmounted
 		return () => {
 			document.body.style.overflow = "";
-		};
+		};		
+		}
+
 	}, [showBuyNowModal]);
 
 	return (

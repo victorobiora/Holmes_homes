@@ -38,7 +38,8 @@ const Container = () => {
 	};
 
 	useEffect(() => {
-		if (isOpen) {
+		if (typeof window !== "undefined") {
+				if (isOpen) {
 			document.body.style.overflow = "hidden";
 		} else {
 			document.body.style.overflow = "";
@@ -47,7 +48,9 @@ const Container = () => {
 		// Cleanup when component is unmounted
 		return () => {
 			document.body.style.overflow = "";
-		};
+		};	
+		}
+
 	}, [isOpen]);
 
 	return (
