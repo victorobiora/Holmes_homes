@@ -1,0 +1,44 @@
+{
+	"theme_color": "#199B6C",
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"start_url": "/",
+	"scope": "/",
+	"id": "/seo/",
+	"name": "holmes",
+	"short_name": "holmes",
+	"description": "changing the properties landscape...",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "/seo/icons/icon-192-maskable.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/seo/icons/icon-192-maskable.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/seo/icons/icon-256-maskable.png",
+			"sizes": "256x256",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/seo/icons/icon-384-maskable.png",
+			"sizes": "384x384",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/seo/icons/icon-512-maskable.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	]
+}
