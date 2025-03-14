@@ -33,7 +33,7 @@ const SignUpPage = () => {
 
 	return (
 		<section className="relative">
-			{/* <div className="sticky top-0 z-[1000] shadow-md">
+			<div className="sticky top-0 z-[1000] shadow-md">
 				<NavBar
 					setActiveSection={setActiveSection}
 					toggleSidebar={toggleSidebar}
@@ -59,7 +59,7 @@ const SignUpPage = () => {
 					</div>
 				)}
 			</>
-			<SignUpFormTest /> */}
+			<SignUpFormTest />
 		
 		</section>
 	);
