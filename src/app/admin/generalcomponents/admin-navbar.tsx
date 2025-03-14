@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import genericAvatar from "@/assets/images/general/generic-avatar.svg";
 import ViewNotificationsModal from "./view-notifications";
 import { BlueBackdrop } from "@/library/modals/blue-backdrop";
-
+import AddMemberCard from "./add-member";
 
 export const AdminNavBar: React.FC<{
 	toggleSidebar: () => void;
@@ -173,7 +173,7 @@ export const AdminNavBar: React.FC<{
 			{/** a section for the task in particular in which the card has been selected */}
 			{showAddMemberModal && (
 				<BlueBackdrop onClick={removeModal}>
-			.
+					<AddMemberCard removeModal={removeModal} />
 				</BlueBackdrop>
 			)}
 			{desktopView()}

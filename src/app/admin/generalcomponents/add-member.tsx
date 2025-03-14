@@ -178,12 +178,9 @@ const AddMemberCard: React.FC<{
 			) : isOTPSent && addMemberRequestSuccessful ? (
 		<InvitationSuccessfulModal removeModal={removeModal} refresh={addAnotherMemeberHandler}/>
 			) : (
-				<UpdateEmailOTP
-					removeModal={removeModal}
-					updateSuccessfulModal={setAddMemberRequestSuccessful}
-					setOTPFormData={setOTPFormData}
-					OTPFormData={OTPFormData}
-				/>
+				<div>
+					
+				</div>
 			)}
 		</>
 	);
