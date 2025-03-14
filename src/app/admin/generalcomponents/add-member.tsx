@@ -176,7 +176,7 @@ const AddMemberCard: React.FC<{
 					</div>
 				</section>
 			) : isOTPSent && addMemberRequestSuccessful ? (
-	<></>
+		<InvitationSuccessfulModal removeModal={removeModal} refresh={addAnotherMemeberHandler}/>
 			) : (
 				<UpdateEmailOTP
 					removeModal={removeModal}
