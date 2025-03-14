@@ -1,7 +1,7 @@
 import Image from "next/image";
 import greyCheck from "@/assets/images/general/grey-check-icon.svg";
 import { motion } from "framer-motion";
-
+import EnvelopeAnimated from "../../../library/modals/EnvelopeAnimated";
 
 const InvitationSuccessfulModal: React.FC<{
 	removeModal: () => void;
@@ -15,7 +15,7 @@ const InvitationSuccessfulModal: React.FC<{
 			}}
 		>
 			<div className="m-3 flex justify-center">
-	
+				<EnvelopeAnimated />
 			</div>
 			<div className="text-2xl font-bold  mt-3 mb-2 text-center">
 				Invitation Email Sent
