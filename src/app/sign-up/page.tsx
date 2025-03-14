@@ -16,20 +16,20 @@ const SignUpPage = () => {
 	};
 
 
-	// useEffect(() => {
-	// 	if (typeof window !== "undefined") {
-	// 		if (isOpen) {
-	// 			document.body.style.overflow = "hidden";
-	// 		} else {
-	// 			document.body.style.overflow = "";
-	// 		}
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			if (isOpen) {
+				document.body.style.overflow = "hidden";
+			} else {
+				document.body.style.overflow = "";
+			}
 	
-	// 		// Cleanup when component is unmounted
-	// 		return () => {
-	// 			document.body.style.overflow = "";
-	// 		};
-	// 	}
-	// }, [isOpen]);
+			// Cleanup when component is unmounted
+			return () => {
+				document.body.style.overflow = "";
+			};
+		}
+	}, [isOpen]);
 
 	return (
 		<section className="relative">
