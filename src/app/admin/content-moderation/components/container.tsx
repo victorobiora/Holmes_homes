@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sidebar } from "../../generalcomponents/admin-sidebar";
+
 import ReviewsMainSection from "./main-section";
 
 const Container = () => {
@@ -13,7 +13,7 @@ const Container = () => {
 
 	return (
 		<div className="flex h-screen overflow-hidden">
-			<Sidebar openMenu={isOpen} setOpenMenu={setIsOpen} />
+		
 			{/* Main content */}
 			<div className="flex-1 h-screen overflow-auto">
 				<ReviewsMainSection toggleSidebar={toggleSidebar} />
