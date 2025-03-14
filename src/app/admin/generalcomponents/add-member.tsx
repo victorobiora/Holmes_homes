@@ -37,27 +37,7 @@ const AddMemberCard: React.FC<{
 	const [viewRoleTypeFields, setviewRoleTypeFields] = useState(false);
 	const roleTypeRef = useRef<HTMLDivElement | null>(null);
 
-	// Handle clicks outside roleType fields
-	useEffect(() => {
-		if (typeof window !== "undefined") {
-		const handleClickOutsideroleType = (event: MouseEvent) => {
-			if (
-				viewRoleTypeFields &&
-				roleTypeRef.current &&
-				!roleTypeRef.current.contains(event.target as Node)
-			) {
-				setviewRoleTypeFields(false);
-			}
-		}
 
-		document.addEventListener("mousedown", handleClickOutsideroleType);
-
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutsideroleType);
-		};	
-		}
-	
-	}, [viewRoleTypeFields]);
 
 
     const addAnotherMemeberHandler = () => {
@@ -178,9 +158,12 @@ const AddMemberCard: React.FC<{
 			) : isOTPSent && addMemberRequestSuccessful ? (
 		<InvitationSuccessfulModal removeModal={removeModal} refresh={addAnotherMemeberHandler}/>
 			) : (
-				<div>
-					
-				</div>
+				<UpdateEmailOTP
+					removeModal={removeModal}
+					updateSuccessfulModal={setAddMemberRequestSuccessful}
+					setOTPFormData={setOTPFormData}
+					OTPFormData={OTPFormData}
+				/>
 			)}
 		</>
 	);
