@@ -16,24 +16,24 @@ const SignUpPage = () => {
 	};
 
 
-	useEffect(() => {
-		if (typeof window !== "undefined") {
-			if (isOpen) {
-				document.body.style.overflow = "hidden";
-			} else {
-				document.body.style.overflow = "";
-			}
+	// useEffect(() => {
+	// 	if (typeof window !== "undefined") {
+	// 		if (isOpen) {
+	// 			document.body.style.overflow = "hidden";
+	// 		} else {
+	// 			document.body.style.overflow = "";
+	// 		}
 	
-			// Cleanup when component is unmounted
-			return () => {
-				document.body.style.overflow = "";
-			};
-		}
-	}, [isOpen]);
+	// 		// Cleanup when component is unmounted
+	// 		return () => {
+	// 			document.body.style.overflow = "";
+	// 		};
+	// 	}
+	// }, [isOpen]);
 
 	return (
 		<section className="relative">
-			<div className="sticky top-0 z-[1000] shadow-md">
+			{/* <div className="sticky top-0 z-[1000] shadow-md">
 				<NavBar
 					setActiveSection={setActiveSection}
 					toggleSidebar={toggleSidebar}
@@ -55,11 +55,11 @@ const SignUpPage = () => {
 								}}
 							/>
 						</div>
-						{/* <aside className="mt-[65.43px]"></aside> */}
+		
 					</div>
 				)}
 			</>
-			<SignUpFormTest />
+			<SignUpFormTest /> */}
 		
 		</section>
 	);
